@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>COCC Membership Checker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="page-header">
+        <h1>COCC</h1>
+        <p>MEMBERSHIP CHECKER</p>
+    </header>
+
+    <main class="membership-card">
+
+        <div class="card-header">
+            <h2>Membership Portal</h2>
+            <p>Enter your name to check your membership.</p>
+        </div>
+
+        <div class="form-content">
+
+            <label for="first_name">First Name</label>
+            <input
+                type="text"
+                id="first_name"
+                placeholder="Enter your first name"
+            >
+
+            <label for="last_name">Last Name</label>
+            <input
+                type="text"
+                id="last_name"
+                placeholder="Enter your last name"
+            >
+
+            <button type="button" id="check_button">
+                CHECK MEMBERSHIP
+            </button>
+
+            <div id="result" role="status" aria-live="polite"></div>
+
+        </div>
+
+        <footer class="card-footer">
+            ICT 10 • Q2 SEATWORK 1
+        </footer>
+
+    </main>
+
+    <script type="py" src="./main.py"></script>
+
+</body>
+</html>
